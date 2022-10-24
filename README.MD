@@ -1,8 +1,8 @@
 # Vue auto detect translation
 
-this npm package is used to detect the translation of Your Application and generate the translation file for you.
-its also support auto and free translation
-using [free translate (google translate)](https://www.npmjs.com/package/free-translate)
+It generates a translation file for you based on the translations detected in Your Application.
+Furthermore, it supports free and automatic translations
+using [Free Translate (Google translate)](https://www.npmjs.com/package/free-translate)
 
 [![npm](https://img.shields.io/npm/v/vue-detect-translation.svg)](https://www.npmjs.com/package/vue-detect-translation)
 [![npm](https://img.shields.io/npm/dt/vue-detect-translation.svg)](https://www.npmjs.com/package/vue-detect-translation)
@@ -11,7 +11,7 @@ using [free translate (google translate)](https://www.npmjs.com/package/free-tra
 ## Installation
 
 ```bash
-npm i vue-detect-translation
+npm install -g vue-detect-translation
 ```
 
 ## Usage
