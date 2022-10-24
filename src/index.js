@@ -43,8 +43,8 @@ if (helpers.isFile(pathToVueFiles)) {
 
 const translation = {};
 
-// const regex = new RegExp(`${functionName.replace('$', '\\$')}\\(['"\`](.+)['"\`]\\)`, 'g'); // old regex
-const regex = new RegExp(`${functionName.replace('$', '\\$')}[^(]*\\(([^)]*)\\)`, 'g');
+// https://regex101.com/r/UaHhMA/1
+const regex = new RegExp(`${functionName.replace('$', '\\$')}[(]*\\(['"\`]([^)]*)['"\`]\\)`, 'g');
 vueFiles.forEach(filePath => {
     const file = fs.readFileSync(filePath, 'utf8');
     const matches = file.match(regex);

@@ -2,11 +2,14 @@
 import fs from "fs";
 import path from "path";
 
+// get diff 2 objects by key
 let diff = (obj1, obj2) => {
     let result = {};
-    for (let i in obj2) {
-        if (obj2[i] !== obj1[i]) {
-            result[i] = obj2[i];
+    for (let key in obj2) {
+        if (obj2.hasOwnProperty(key)) {
+            if (!obj1.hasOwnProperty(key)) {
+                result[key] = obj2[key];
+            }
         }
     }
     return result;
