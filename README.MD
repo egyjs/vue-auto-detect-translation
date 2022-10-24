@@ -34,7 +34,7 @@ v-detact-t
 - [x] Add option `language-to` in autoTranslate (ex. `--auto-translate=fr`)
 - [ ] support multiple Programming languages (currently support only`vue|js|jsx|ts|tsx`)
     - im think to create an option called `extentions` (for example `--language=vue,js,jsx,ts,tsx`)
-
+- [ ] create custom "free-translate" pkg , to speed up the translation process an upgrade `puppeteer` to @latest 
 # vue-auto-detect-translation
 
 # Contributing
