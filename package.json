@@ -1,0 +1,33 @@
+{
+  "name": "vue-detect-translation",
+  "version": "1.0.0",
+  "description": "auto detect Vue translation keys, with auto translate",
+  "main": "src/index.js",
+  "scripts": {
+    "test:file": "node . --path=tests/test.vue",
+    "test:path": "node . --path=tests --funcName=$t",
+    "test:toArLang": "node . --path=tests --funcName=$t --autoTranslate=ar",
+    "test:wrongPath": "node . --path=testes",
+    "test:outputIsDirectory": "node . --path=tests --funcName=$t --output=tests --autoTranslate=toLANG",
+    "test:wrongOutputExt": "node . --path=tests --funcName=$t --output=test/en.js --autoTranslate=ar"
+  },
+  "author": "egyjs <egyjs.com@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "free-translate": "^0.6.1",
+    "glob": "^8.0.3",
+    "minimist": "^1.2.7"
+  },
+  "keywords": [
+    "vue-detect-translation",
+    "vue",
+    "translation",
+    "auto",
+    "detect",
+    "translate",
+    "auto-translate",
+    "free-translate",
+    "google-translate"
+  ],
+  "type": "module"
+}

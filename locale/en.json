@@ -1,0 +1,6 @@
+{
+  "Hello World!": "Hello World!",
+  "test from this line: ${line}": "test from this line: ${line}",
+  "hello ' from template": "hello ' from template",
+  "hello' from script": "hello' from script"
+}
