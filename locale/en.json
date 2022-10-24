@@ -1,6 +1,7 @@
 {
   "Hello World!": "مرحبا بالعالم!",
   "test from this line: ${line}": "اختبار من هذا السطر: ${line}",
+  "inline test": "اختبار مضمّن",
   "hello ' from template": "مرحبا من القالب",
   "hello' from script": "مرحبا من السيناريو"
 }
