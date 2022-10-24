@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "auto detect Vue translation keys, with auto translate",
   "main": "src/index.js",
+  "bin": {
+    "v-detect-t": "src/index.js"
+  },
   "scripts": {
     "test:file": "node . --path=tests/test.vue",
     "test:path": "node . --path=tests --funcName=$t",
@@ -11,10 +14,11 @@
     "test:outputIsDirectory": "node . --path=tests --funcName=$t --output=tests --autoTranslate=toLANG",
     "test:wrongOutputExt": "node . --path=tests --funcName=$t --output=test/en.js --autoTranslate=ar"
   },
-  "author": "egyjs <egyjs.com@gmail.com>",
+  "author": "Egyjs | AbdulRahman El-zahaby <el3zahaby@gmail.com",
+  "repository": "https://github.com/egyjs/vue-auto-detect-translation",
   "license": "ISC",
   "dependencies": {
-    "free-translate": "^0.6.1",
+    "free-translate": "^0.1.1",
     "glob": "^8.0.3",
     "minimist": "^1.2.7"
   },

@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // this is node script to detect translation in vue files
 // usage: node vue-detect-translation.js --path=src --output=src/locale/en.json
 // usage: node vue-detect-translation.js --path=test.vue --output=src/locale/en.json --funcName=$t
