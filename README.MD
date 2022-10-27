@@ -2,7 +2,7 @@
 
 It generates a translation file for you based on the translations detected in Your Application.
 Furthermore, it supports free and automatic translations
-using [Free Translate (Google translate)](https://www.npmjs.com/package/free-translate)
+using [API Translator (Google translate)](https://www.npmjs.com/package/api-translator)
 
 [![npm](https://img.shields.io/npm/v/vue-detect-translation.svg)](https://www.npmjs.com/package/vue-detect-translation)
 [![npm](https://img.shields.io/npm/dt/vue-detect-translation.svg)](https://www.npmjs.com/package/vue-detect-translation)
