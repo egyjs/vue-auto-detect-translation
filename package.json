@@ -1,6 +1,6 @@
 {
   "name": "vue-detect-translation",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "auto detect Vue translation keys, with auto translate",
   "main": "src/index.js",
   "bin": {
@@ -16,9 +16,9 @@
   },
   "author": "Egyjs | AbdulRahman El-zahaby <el3zahaby@gmail.com",
   "repository": "https://github.com/egyjs/vue-auto-detect-translation",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "free-translate": "^0.1.1",
+    "api-translator": "^1.0.11",
     "glob": "^8.0.3",
     "minimist": "^1.2.7"
   },

@@ -9,7 +9,7 @@ import path from "path";
 import glob from "glob";
 import minimist from "minimist";
 import helpers from "./helpers.js";
-import {translate} from "free-translate";
+import {translate} from "api-translator";
 
 const argv = minimist(process.argv.slice(2));
 
@@ -68,7 +68,7 @@ vueFiles.forEach(filePath => {
 // translations
 let oldTranslation = helpers.isPathExists(pathToOutputFile) ? JSON.parse(fs.readFileSync(pathToOutputFile, 'utf8')) : {};
 const newTranslation = helpers.diff(oldTranslation, translation);
-const mergedTranslation = Object.assign({}, oldTranslation, newTranslation);
+let mergedTranslation = Object.assign({}, oldTranslation, newTranslation);
 
 // async function
 (async () => {
@@ -78,10 +78,8 @@ const mergedTranslation = Object.assign({}, oldTranslation, newTranslation);
     // check if auto translate is enabled
     if (argv.autoTranslate && argv.autoTranslate.length > 0 && Object.keys(newTranslation).length > 0) {
         console.info('Start auto translate');
-        const keys = Object.keys(newTranslation);
-        for (const key of keys) {
-            mergedTranslation[key] = await translate(key, {from: 'en', to: argv.autoTranslate});
-        }
+        mergedTranslation = await translate(newTranslation, {from: 'en', to: argv.autoTranslate})
+        console.log(mergedTranslation);
     }
 
 
