@@ -1,6 +1,6 @@
 {
   "name": "vue-detect-translation",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "auto detect Vue translation keys, with auto translate",
   "main": "src/index.js",
   "bin": {
