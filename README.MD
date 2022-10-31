@@ -17,7 +17,7 @@ npm install -g vue-detect-translation
 ## Usage
 
 ```bash
-v-detact-t 
+v-detect-t 
 # options
 --path= # path you want to scan for translation (default: src)
 --auto-translate= # language to translate to (example: --auto-translate=ar)
